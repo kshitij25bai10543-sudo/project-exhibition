@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>StormSense AI — Intelligent Early Weather Prediction & Disaster Alert System</title>
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;800&family=Rajdhani:wght@400;500;600&display=swap" rel="stylesheet">
+<script src="style.js"></script>
+</head>
+<body>
+<div id="prog"></div><div id="glow"></div><div id="cur"></div><div id="scan"></div>
+
+<nav class="glass hd">
+  <a href="#home" class="logo">STORMSENSE<span>AI</span></a>
+  <div class="links" id="links">
+    <a href="#home">HOME</a><a href="#problem">PROBLEM</a><a href="#vision">VISION</a><a href="#capabilities">CAPABILITIES</a><a href="#simulation">SIMULATION</a><a href="#pipeline">PIPELINE</a><a href="#tech">TECH</a><a href="#impact">IMPACT</a><a href="#team">TEAM</a>
+  </div>
+  <div class="sys"><i></i>SYSTEM ONLINE</div>
+  <button id="ham" aria-label="Menu">☰</button>
+</nav>
+
+<!-- HERO -->
+<section id="home">
+  <canvas id="hero3d"></canvas>
+  <span class="coord" style="top:22%;right:8%">LAT 19.07°N · LON 72.87°E · DEMO GRID</span>
+  <span class="coord" style="bottom:14%;right:6%">SAT-IR · THERMAL · DOPPLER</span>
+  <div class="hc">
+    <span class="tag">AI WEATHER INTELLIGENCE</span>
+    <h1>STORMSENSE AI</h1>
+    <div class="sub">INTELLIGENT EARLY WEATHER PREDICTION</div>
+    <q>Predict the storm.<br>Protect what matters.</q>
+    <div class="big"><span class="cnt" data-n="72">0</span>H<small>ADVANCED STORM TRACKING</small></div>
+    <p style="color:var(--mu);margin-top:.6rem">Localized storm intelligence before disaster strikes.</p>
+    <div class="btns"><a class="btn p mag" href="#capabilities" data-go>EXPLORE SYSTEM</a><a class="btn mag" href="#simulation" data-go>LIVE SIMULATION</a></div>
+  </div>
+  <div class="scrl">SCROLL TO EXPLORE ↓</div>
+</section>
+
+<!-- PROBLEM -->
+<section id="problem">
+  <div class="split">
+    <div>
+      <span class="tag">THE PROBLEM</span>
+      <h2>THE STORM<br>DOESN'T WAIT.</h2>
+      <div class="glass pc rv"><b>MACRO FORECASTS MISS LOCAL EVENTS</b><p>Cloudbursts, urban flash floods and localized tornadic activity slip through, leaving communities reactive after damage occurs.</p></div>
+      <div class="glass pc rv"><b>DATA IS TOO FRAGMENTED</b><p>Massive unstructured streams from satellites, IoT sensors and Doppler radar — with no real-time multimodal spatial vision.</p></div>
+      <div class="glass pc rv"><b>RESPONSE IS OFTEN TOO LATE</b><p>Legacy systems can't predict micro-climate hazards 48–72 hours ahead.</p></div>
+    </div>
+    <canvas id="stormcv" width="600" height="600"></canvas>
+  </div>
+</section>
+
+<!-- VISION -->
+<section id="vision">
+  <span class="tag">THE VISION</span>
+  <h2>FROM REACTION<br>TO PREDICTION.</h2>
+  <p style="max-width:700px;color:var(--mu)">Transform multi-terabyte satellite and sensor streams into actionable early alerts.</p>
+  <div class="flow">
+    <div class="glass fn a">POST-DISASTER<br>RESPONSE</div><div class="arr">➜</div>
+    <div class="glass fn b">AI<br>PREDICTION</div><div class="arr">➜</div>
+    <div class="glass fn c">PRE-DISASTER<br>DEFENCE</div>
+  </div>
+  <div class="lead"><span class="cnt" data-n="48">0</span>–<span class="cnt" data-n="72">0</span> HOURS<small>LEAD TIME</small></div>
+  <div class="obj">
+    <div class="glass"><h3>72-HOUR FORECAST</h3>Localized tracking with 2–3 days of lead time.</div>
+    <div class="glass"><h3>SPATIAL VISION</h3>Satellite + thermal + Doppler integration for early vortex detection.</div>
+    <div class="glass"><h3>GEO-TARGETED ALERTS</h3>Automated dispatch to farmers, civic bodies and responders.</div>
+  </div>
+</section>
+
+<!-- CAPABILITIES -->
+<section id="capabilities">
+  <span class="tag">CORE CAPABILITIES</span>
+  <h2>WHAT STORMSENSE SEES.</h2>
+  <div class="grid3">
+    <div class="glass card tilt"><svg viewBox="0 0 48 48"><rect x="18" y="18" width="12" height="12" rx="2" transform="rotate(45 24 24)"/><path d="M8 8l8 8M32 32l8 8M28 6l10 10M6 28l10 10"/></svg><h3>SATELLITE VISION</h3><p>Multimodal IR and thermal satellite processing.</p></div>
+    <div class="glass card tilt"><svg viewBox="0 0 48 48"><circle cx="24" cy="24" r="18"/><circle cx="24" cy="24" r="10"/><path d="M24 24L38 12"/></svg><h3>RADAR INTELLIGENCE</h3><p>Doppler radar processing for early vortex detection.</p></div>
+    <div class="glass card tilt"><svg viewBox="0 0 48 48"><path d="M10 30a8 8 0 010-16 10 10 0 0120 0 8 8 0 010 16z"/><path d="M24 30l-4 8h6l-4 8"/></svg><h3>MULTI-HAZARD AI</h3><p>Neural classification of cyclones, flash floods, extreme precipitation and gusts.</p></div>
+    <div class="glass card tilt"><svg viewBox="0 0 48 48"><rect x="6" y="6" width="36" height="36" rx="4"/><circle cx="20" cy="22" r="7"/><circle cx="31" cy="30" r="5"/></svg><h3>72H RISK HEATMAP</h3><p>72-hour spatial risk heatmaps.</p></div>
+    <div class="glass card tilt"><svg viewBox="0 0 48 48"><path d="M24 6a12 12 0 0112 12c0 10-12 24-12 24S12 28 12 18A12 12 0 0124 6z"/><circle cx="24" cy="18" r="4"/></svg><h3>GEO-TARGETED ALERTS</h3><p>Automated geo-targeted alerting to farmers, civic bodies and responders.</p></div>
+    <div class="glass card tilt"><svg viewBox="0 0 48 48"><path d="M6 24h8l4-10 6 20 4-10h14"/></svg><h3>IOT TELEMETRY</h3><p>Edge nodes capture pressure, wind and humidity.</p></div>
+  </div>
+</section>
+
+<!-- STORM SIMULATION -->
+<section id="simulation">
+  <div id="exh">STORMSENSE AI — EXHIBITION DEMO</div>
+  <div class="hd"><span class="tag demo">DEMO SIMULATION</span>
+  <h2>LIVE STORM MONITOR.</h2>
+  <p style="color:var(--mu);margin-bottom:1rem;max-width:760px">A simulated storm for demonstration. All values below are illustrative — not real-time data and not a measure of prediction accuracy. Click the map to move the storm along its path.</p></div>
+  <div class="glass" id="simwrap">
+    <span class="tag demo demolbl">DEMO SIMULATION</span>
+    <canvas id="simcv"></canvas>
+    <div id="alert"><b>⚠ WEATHER ALERT (DEMO)</b>HIGH-RISK STORM CELL DETECTED<br>Lead time: <span id="lt">61</span> hours</div>
+  </div>
+  <div class="hud">
+    <div class="glass"><small>WIND</small><b><span id="vw">128</span> km/h</b></div>
+    <div class="glass"><small>PRESSURE</small><b><span id="vp">964</span> hPa</b></div>
+    <div class="glass"><small>RAINFALL</small><b><span id="vr">182</span> mm</b></div>
+    <div class="glass"><small>RISK</small><b id="vk" style="color:var(--da)">HIGH</b></div>
+    <div class="glass"><small>FORECAST</small><b>72 HOURS</b></div>
+  </div>
+  <div class="ctl">
+    <button class="btn sm" id="play">PLAY</button><button class="btn sm" id="pause">PAUSE</button><button class="btn sm" id="reset">RESET</button>
+    <label>SIMULATION SPEED <input type="range" id="spd" min="0.2" max="4" step="0.1" value="1"></label>
+    <button class="btn sm p" id="exbtn">EXHIBITION MODE</button><button class="btn sm" id="exx" style="display:none">EXIT EXHIBITION MODE</button>
+  </div>
+  <div id="bar"><i></i></div>
+  <div id="tl"><span>NOW</span><span>+12H</span><span>+24H</span><span>+36H</span><span>+48H</span><span>+72H</span></div>
+</section>
+
+<!-- PIPELINE -->
+<section id="pipeline">
+  <span class="tag">AI PIPELINE</span>
+  <h2>FROM SIGNAL TO ALERT.</h2>
+  <div class="glass"><canvas id="pipecv"></canvas></div>
+  <div class="phases">
+    <div class="glass"><b>PHASE 1</b>Data ingestion from sensors</div>
+    <div class="glass"><b>PHASE 2</b>Train models (ConvLSTM)</div>
+    <div class="glass"><b>PHASE 3</b>Build prediction &amp; app</div>
+    <div class="glass"><b>PHASE 4</b>Validate and deliver alerts</div>
+  </div>
+</section>
+
+<!-- TECH -->
+<section id="tech">
+  <span class="tag">TECHNICAL ARCHITECTURE</span>
+  <h2>FOUR LAYERS. ONE SYSTEM.</h2>
+  <div id="stack">
+    <div class="glass layer"><h3>LAYER 1 · HARDWARE</h3><span>NVIDIA RTX GPU · IoT Telemetry Nodes</span></div>
+    <div class="glass layer"><h3>LAYER 2 · AI / SOFTWARE</h3><span>Python 3.10 · PyTorch · OpenCV · SciPy · ConvLSTM</span></div>
+    <div class="glass layer"><h3>LAYER 3 · BACKEND</h3><span>FastAPI · PostgreSQL / PostGIS · Docker</span></div>
+    <div class="glass layer"><h3>LAYER 4 · FRONTEND</h3><span>React.js · Leaflet GIS · Chart.js</span></div>
+  </div>
+  <p style="text-align:center;color:var(--mu)">Proposed project architecture. This demo site itself is plain HTML.</p>
+</section>
+
+<!-- DATA -->
+<section id="data">
+  <span class="tag">DATA UNIVERSE</span>
+  <h2>EVERY SIGNAL,<br>ONE ENGINE.</h2>
+  <div class="glass"><canvas id="datacv"></canvas></div>
+</section>
+
+<!-- METHODOLOGY -->
+<section id="method">
+  <span class="tag">METHODOLOGY</span>
+  <h2>HOW WE BUILD IT.</h2>
+  <div id="mh">
+    <div class="glass step"><em>01</em><h3>PREPROCESSING</h3><p>Normalize satellite feeds, align telemetry, augment training sets.</p></div>
+    <div class="glass step"><em>02</em><h3>MODELING</h3><p>Train ConvLSTM + Spatial Transformer ensembles for spatiotemporal prediction.</p></div>
+    <div class="glass step"><em>03</em><h3>EVALUATION</h3><p>Benchmark against historical storm tracks; tune for lead-time reliability.</p></div>
+    <div class="glass step"><em>04</em><h3>DEPLOYMENT</h3><p>Serve predictions via FastAPI, render GIS heatmaps and trigger geo-alerts.</p></div>
+  </div>
+  <p style="margin-top:1rem;color:var(--mu)"><b style="color:var(--cy)">Datasets:</b> NASA &amp; NOAA satellite imagery (IR, thermal) · ECMWF ERA5 reanalysis · Ground IoT micro-station telemetry · Doppler radar archives.</p>
+</section>
+
+<!-- IMPACT -->
+<section id="impact">
+  <span class="tag">IMPACT</span>
+  <h2>BEFORE LANDFALL,<br>NOT AFTER.</h2>
+  <div class="glass ic rv"><div class="e">🌾</div><div><h3>AGRICULTURE</h3><q>Harvest earlier.<br>Protect equipment.</q><p>Farmers receive hyper-local warnings to harvest early and secure equipment.</p></div></div>
+  <div class="glass ic rv"><div class="e">🏙</div><div><h3>MUNICIPALITIES</h3><q>Prepare evacuations.<br>Protect infrastructure.</q><p>Civic teams get lead time for targeted evacuations and infrastructure protection.</p></div></div>
+  <div class="glass ic rv"><div class="e">🚑</div><div><h3>FIRST RESPONDERS</h3><q>Pre-stage resources.<br>Respond before landfall.</q><p>Pre-stage rescue gear, medical shelters and communications ahead of landfall.</p></div></div>
+</section>
+
+<!-- TEAM -->
+<section id="team">
+  <span class="tag">TEAM</span>
+  <h2>THE CREW.</h2>
+  <div class="tg">
+    <div class="glass tm tilt lead"><div class="av"></div><h3>Ridhima Pandey</h3><small>PROJECT LEAD</small><p>Dataset acquisition &amp; preprocessing</p></div>
+    <div class="glass tm tilt"><div class="av"></div><h3>Kshiti</h3></div>
+    <div class="glass tm tilt"><div class="av"></div><h3>Saina</h3></div>
+    <div class="glass tm tilt"><div class="av"></div><h3>Kshitij</h3></div>
+    <div class="glass tm tilt"><div class="av"></div><h3>Nipun</h3></div>
+    <div class="glass tm tilt"><div class="av"></div><h3>Aryan</h3></div>
+  </div>
+</section>
+
+<!-- NEXT STEPS -->
+<section id="next">
+  <span class="tag">NEXT STEPS</span>
+  <h2>LAUNCH SEQUENCE.</h2>
+  <div class="tlx">
+    <div class="glass ls rv"><b>T–03</b><h3>Complete ConvLSTM benchmarks and validation</h3></div>
+    <div class="glass ls rv"><b>T–02</b><h3>Deploy pilot with edge telemetry in an agricultural region</h3></div>
+    <div class="glass ls rv"><b>T–01</b><h3>Showcase at VIT Bhopal exhibition and collect field feedback</h3></div>
+  </div>
+</section>
+
+<section id="final">
+  <h2>THE FUTURE OF<br>DISASTER RESPONSE<br>STARTS BEFORE<br>THE STORM.</h2>
+  <div class="orb" style="font-size:1.6rem;color:var(--cy);letter-spacing:.2em">STORMSENSE AI</div>
+  <q>Predict earlier.<br>Prepare smarter.<br>Protect more.</q>
+  <a class="btn p mag" href="#home" id="restart">RESTART EXPERIENCE</a>
+</section>
+<footer>StormSense AI · University project exhibition · Simulated visuals are labelled DEMO SIMULATION.</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script>
+/* ===== CORE ===== */
+const $=s=>document.querySelector(s),$$=s=>[...document.querySelectorAll(s)];
+const RM=matchMedia('(prefers-reduced-motion:reduce)').matches,MOB=innerWidth<800;
+const mouse={x:0,y:0,tx:0,ty:0};
+addEventListener('mousemove',e=>{mouse.tx=e.clientX/innerWidth*2-1;mouse.ty=e.clientY/innerHeight*2-1;
+  const c=$('#cur');c.style.left=e.clientX+'px';c.style.top=e.clientY+'px';
+  $('#glow').style.transform=`translate(${e.clientX}px,${e.clientY}px)`});
+$$('a,button,.card,.tm,.layer').forEach(el=>{el.addEventListener('mouseenter',()=>$('#cur').classList.add('h'));el.addEventListener('mouseleave',()=>$('#cur').classList.remove('h'))});
+/* nav + scroll */
+$('#ham').onclick=()=>$('#links').classList.toggle('open');
+function go(id){const t=$(id);if(!t)return;$('#links').classList.remove('open');scrollTo({top:t.getBoundingClientRect().top+scrollY-(id==='#home'?0:10),behavior:RM?'auto':'smooth'})}
+$$('a[href^="#"]').forEach(a=>a.addEventListener('click',e=>{e.preventDefault();go(a.getAttribute('href'))}));
+addEventListener('scroll',()=>{const h=document.documentElement;$('#prog').style.width=scrollY/(h.scrollHeight-innerHeight)*100+'%';
+  let cur='';$$('.links a').forEach(a=>{const s=$(a.getAttribute('href'));if(s&&s.getBoundingClientRect().top<innerHeight*.4)cur=a.getAttribute('href')});
+  $$('.links a').forEach(a=>a.classList.toggle('on',a.getAttribute('href')===cur))},{passive:true});
+/* tilt + magnetic */
+$$('.tilt').forEach(c=>{c.addEventListener('mousemove',e=>{const r=c.getBoundingClientRect(),x=(e.clientX-r.left)/r.width-.5,y=(e.clientY-r.top)/r.height-.5;
+  gsap.to(c,{rotateY:x*16,rotateX:-y*16,transformPerspective:800,duration:.4})});
+  c.addEventListener('mouseleave',()=>gsap.to(c,{rotateX:0,rotateY:0,duration:.6}))});
+$$('.mag').forEach(b=>{b.addEventListener('mousemove',e=>{const r=b.getBoundingClientRect();gsap.to(b,{x:(e.clientX-r.left-r.width/2)*.3,y:(e.clientY-r.top-r.height/2)*.4,duration:.3})});b.addEventListener('mouseleave',()=>gsap.to(b,{x:0,y:0,duration:.5}))});
+/* GSAP reveals */
+gsap.registerPlugin(ScrollTrigger);
+if(!RM){
+  $$('.hc>*').forEach((el,i)=>gsap.from(el,{y:40,opacity:0,filter:'blur(12px)',duration:1,delay:.2+i*.12}));
+  $$('.rv').forEach((el,i)=>gsap.from(el,{scrollTrigger:{trigger:el,start:'top 85%'},x:i%2?80:-80,opacity:0,filter:'blur(10px)',duration:.9}));
+  gsap.from('.fn.a',{scrollTrigger:{trigger:'.flow',start:'top 80%'},x:-120,opacity:0,duration:1});
+  gsap.from('.fn.b',{scrollTrigger:{trigger:'.flow',start:'top 80%'},scale:.4,rotate:-8,opacity:0,duration:1,delay:.2});
+  gsap.from('.fn.c',{scrollTrigger:{trigger:'.flow',start:'top 80%'},x:120,opacity:0,duration:1,delay:.4});
+  gsap.from('.arr',{scrollTrigger:{trigger:'.flow',start:'top 80%',end:'bottom 40%',scrub:1},scale:0,x:-30,stagger:.3});
+  gsap.from('.card',{scrollTrigger:{trigger:'.grid3',start:'top 80%'},y:80,rotateX:-40,opacity:0,stagger:.12,duration:.9});
+  gsap.from('.step',{scrollTrigger:{trigger:'#mh',start:'top 85%'},x:120,opacity:0,stagger:.2,duration:.9});
+  gsap.from('.tm',{scrollTrigger:{trigger:'.tg',start:'top 85%'},scale:.6,rotateY:90,opacity:0,stagger:.1,duration:.8});
+  gsap.from('.layer',{scrollTrigger:{trigger:'#stack',start:'top 80%'},y:120,opacity:0,stagger:.15,duration:1});
+  gsap.to('#final h2',{scrollTrigger:{trigger:'#final',start:'top 80%',end:'center center',scrub:1},keyframes:{'0%':{scale:.8,opacity:0,filter:'blur(14px)'},'100%':{scale:1,opacity:1,filter:'blur(0px)'}}});
+  gsap.to('#impact',{backgroundPosition:'50% 30%',scrollTrigger:{trigger:'#impact',scrub:1}});
+}
+$$('.cnt').forEach(el=>ScrollTrigger.create({trigger:el,start:'top 90%',once:true,onEnter:()=>{const o={v:0};gsap.to(o,{v:+el.dataset.n,duration:RM?0:2,ease:'power2.out',onUpdate:()=>el.textContent=Math.round(o.v)})}}));
+$('#restart').addEventListener('click',()=>{});
+
+/* ===== HERO 3D ===== */
+(function(){
+  if(typeof THREE==='undefined')return;
+  const cv=$('#hero3d'),R=new THREE.WebGLRenderer({canvas:cv,alpha:true,antialias:!MOB});
+  R.setPixelRatio(Math.min(devicePixelRatio,MOB?1.5:2));
+  const S=new THREE.Scene(),C=new THREE.PerspectiveCamera(45,1,.1,100);C.position.z=7;
+  const G=new THREE.Group();S.add(G);
+  G.add(new THREE.Mesh(new THREE.SphereGeometry(1.8,48,48),new THREE.MeshBasicMaterial({color:0x04182b})));
+  G.add(new THREE.Mesh(new THREE.SphereGeometry(1.81,32,24),new THREE.MeshBasicMaterial({color:0x00f5d4,wireframe:true,transparent:true,opacity:.13})));
+  G.add(new THREE.Mesh(new THREE.SphereGeometry(2.05,32,32),new THREE.MeshBasicMaterial({color:0x00bfff,transparent:true,opacity:.07,side:THREE.BackSide})));
+  function pts(n,f,size,col){const p=new Float32Array(n*3);for(let i=0;i<n;i++){const v=f(i);p.set(v,i*3)}const g=new THREE.BufferGeometry();g.setAttribute('position',new THREE.BufferAttribute(p,3));return new THREE.Points(g,new THREE.PointsMaterial({color:col,size,transparent:true,opacity:.85,depthWrite:false}))}
+  const N=MOB?600:1600;
+  const land=pts(N,()=>{const u=Math.random()*6.283,v=Math.acos(2*Math.random()-1),r=1.84;return[r*Math.sin(v)*Math.cos(u),r*Math.cos(v),r*Math.sin(v)*Math.sin(u)]},.03,0x00f5d4);G.add(land);
+  const cloud=pts(MOB?700:1800,i=>{const a=i*.11+Math.random()*.4,r=.25+Math.pow(Math.random(),.7)*1.4,arm=a*1.0;return[Math.cos(arm)*r,(Math.random()-.5)*.08,Math.sin(arm)*r]},.045,0xffffff);
+  cloud.position.set(.9,.7,1.55);cloud.rotation.x=1.15;cloud.scale.setScalar(.8);G.add(cloud);
+  const rings=[];[2.5,3,3.6].forEach((r,i)=>{const m=new THREE.Mesh(new THREE.TorusGeometry(r,.008,8,120),new THREE.MeshBasicMaterial({color:[0x00f5d4,0x00bfff,0x7c3aed][i],transparent:true,opacity:.6}));m.rotation.x=1.2+i*.3;m.rotation.y=i*.5;G.add(m);rings.push(m)});
+  const pc=[];for(let i=0;i<=40;i++){const t=i/40,a=-1.2+t*2.2,b=.5-t*.9+Math.sin(t*4)*.08;pc.push(new THREE.Vector3(2.02*Math.cos(b)*Math.sin(a),2.02*Math.sin(b),2.02*Math.cos(b)*Math.cos(a)))}
+  G.add(new THREE.Line(new THREE.BufferGeometry().setFromPoints(pc),new THREE.LineBasicMaterial({color:0xf59e0b})));
+  const dot=new THREE.Mesh(new THREE.SphereGeometry(.05,12,12),new THREE.MeshBasicMaterial({color:0xff3b30}));G.add(dot);
+  const bolt=new THREE.Line(new THREE.BufferGeometry(),new THREE.LineBasicMaterial({color:0xaef4ff,transparent:true}));G.add(bolt);
+  const rain=pts(MOB?300:800,()=>[(Math.random()-.5)*14,(Math.random()-.5)*9,(Math.random()-.5)*6],.02,0x00bfff);S.add(rain);
+  const sweep=new THREE.Mesh(new THREE.RingGeometry(1.9,3.9,64,1,0,.9),new THREE.MeshBasicMaterial({color:0x00f5d4,transparent:true,opacity:.14,side:THREE.DoubleSide}));sweep.rotation.x=Math.PI/2.4;S.add(sweep);
+  function size(){const w=cv.parentElement.clientWidth,h=cv.parentElement.clientHeight;R.setSize(w,h,false);C.aspect=w/h;C.updateProjectionMatrix();const wide=w>900;G.position.set(wide?2.3:0,wide?0:1.6,0);G.scale.setScalar(wide?1:.7);sweep.position.copy(G.position);sweep.scale.setScalar(wide?1:.7)}
+  addEventListener('resize',size);size();
+  let t=0,vis=true;new IntersectionObserver(e=>vis=e[0].isIntersecting).observe(cv);
+  (function loop(){requestAnimationFrame(loop);if(!vis)return;t+=.016;
+    mouse.x+=(mouse.tx-mouse.x)*.05;mouse.y+=(mouse.ty-mouse.y)*.05;
+    if(!RM){G.rotation.y+=.0025;cloud.rotation.z+=.015;sweep.rotation.z-=.03;rings.forEach((r,i)=>r.rotation.z+=.002*(i+1))}
+    G.rotation.y+=mouse.x*.004;G.rotation.x=mouse.y*.25;rain.position.x=-mouse.x*.4;rain.position.y=Math.sin(t*.5)*.2;
+    const k=(t*.12)%1,pt=pc[Math.floor(k*40)];dot.position.copy(pt);dot.scale.setScalar(1+.4*Math.sin(t*8));
+    if(Math.random()<.04&&!RM){const a=[],s=new THREE.Vector3(Math.random()*4-2,3.2,Math.random()*2);for(let i=0;i<8;i++){a.push(s.clone());s.x+=Math.random()*.4-.2;s.y-=.35;s.z+=Math.random()*.2-.1}bolt.geometry.setFromPoints(a);bolt.material.opacity=1}
+    bolt.material.opacity*=.9;
+    R.render(S,C)})();
+})();
+
+/* ===== 2D helpers ===== */
+function fit(cv){const r=cv.getBoundingClientRect(),d=Math.min(devicePixelRatio,2);cv.width=r.width*d;cv.height=r.height*d;const x=cv.getContext('2d');x.setTransform(d,0,0,d,0,0);return{x,w:r.width,h:r.height}}
+function vis(cv){let v=false;new IntersectionObserver(e=>v=e[0].isIntersecting).observe(cv);return()=>v}
+
+/* ===== PROBLEM storm ===== */
+(function(){const cv=$('#stormcv'),v=vis(cv);let s,t=0,dr=[];
+  const rs=()=>{s=fit(cv);dr=Array.from({length:MOB?60:140},()=>({x:Math.random()*s.w,y:Math.random()*s.h,l:6+Math.random()*10}))};addEventListener('resize',rs);rs();
+  (function L(){requestAnimationFrame(L);if(!v())return;t+=.02;const{x,w,h}=s;x.clearRect(0,0,w,h);const cx=w/2,cy=h/2;
+    x.strokeStyle='rgba(0,245,212,.25)';[.2,.35,.5].forEach(r=>{x.beginPath();x.arc(cx,cy,w*r,0,7);x.stroke()});
+    for(let i=0;i<260;i++){const a=i*.16+t,r=6+i*.9;x.fillStyle=`rgba(${i<40?'255,59,48':i<120?'245,158,11':'0,191,255'},${.75-i/400})`;x.beginPath();x.arc(cx+Math.cos(a)*r*(w/600),cy+Math.sin(a)*r*.9*(w/600),2.2,0,7);x.fill()}
+    x.strokeStyle='rgba(120,200,255,.5)';dr.forEach(d=>{x.beginPath();x.moveTo(d.x,d.y);x.lineTo(d.x-3,d.y+d.l);x.stroke();d.y+=6;d.x-=.5;if(d.y>h){d.y=-10;d.x=Math.random()*w}});
+    x.save();x.translate(cx,cy);x.rotate(t*1.5);x.fillStyle='rgba(0,245,212,.12)';x.beginPath();x.moveTo(0,0);x.arc(0,0,w*.5,0,.7);x.fill();x.restore()})()})();
+
+/* ===== STORM SIMULATION ===== */
+(function(){const cv=$('#simcv'),v=vis(cv);let s;const rs=()=>s=fit(cv);addEventListener('resize',rs);rs();
+  const P=[[.12,.78],[.28,.62],[.42,.55],[.58,.4],[.74,.32],[.88,.2]],T=[0,12,24,36,48,72];
+  const pos=k=>{const f=k*5,i=Math.min(4,Math.floor(f)),u=f-i;return[P[i][0]+(P[i+1][0]-P[i][0])*u,P[i][1]+(P[i+1][1]-P[i][1])*u]};
+  const mk=[['FARMLAND',.5,.72],['RIVER TOWN',.66,.55],['CITY',.8,.45],['COAST',.9,.3]];
+  let k=0,play=true,spd=1,t=0,shown=false;
+  $('#play').onclick=()=>play=true;$('#pause').onclick=()=>play=false;$('#reset').onclick=()=>{k=0;shown=false;$('#alert').classList.remove('show')};
+  $('#spd').oninput=e=>spd=+e.target.value;
+  cv.addEventListener('click',e=>{const r=cv.getBoundingClientRect(),m=(e.clientX-r.left)/r.width;k=Math.max(0,Math.min(1,(m-.12)/.76))});
+  function ex(on){document.body.classList.toggle('ex',on);$('#exbtn').style.display=on?'none':'';$('#exx').style.display=on?'':'none';rs();if(on)scrollTo(0,0)}
+  $('#exbtn').onclick=()=>{ex(true);document.documentElement.requestFullscreen&&document.documentElement.requestFullscreen().catch(()=>{})};
+  $('#exx').onclick=()=>{ex(false);document.fullscreenElement&&document.exitFullscreen();go('#simulation')};
+  addEventListener('keydown',e=>{if(e.key==='Escape'&&document.body.classList.contains('ex'))ex(false)});
+  setInterval(()=>{const q=k;$('#vw').textContent=Math.round(128+Math.sin(t*2)*6-q*10);$('#vp').textContent=Math.round(964+Math.cos(t*1.7)*3+q*8);$('#vr').textContent=Math.round(182+q*70+Math.sin(t)*4);
+    const risk=q<.55?['HIGH','var(--da)']:q<.85?['ELEVATED','var(--wa)']:['MODERATE','var(--cy)'];$('#vk').textContent=risk[0];$('#vk').style.color=risk[1];$('#lt').textContent=Math.round(72-q*72+61*(1-q)/1)>0?Math.max(1,Math.round(61*(1-q))):1},400);
+  (function L(){requestAnimationFrame(L);if(!v())return;t+=.016;if(play&&!RM)k=Math.min(1,k+.0006*spd);if(k>=1&&play)k=0;
+    $('#bar i').style.width=k*100+'%';$$('#tl span').forEach((el,i)=>el.classList.toggle('on',k*72>=T[i]-.1));
+    if(k>.04&&!shown){shown=true;$('#alert').classList.add('show')}
+    const{x,w,h}=s;x.clearRect(0,0,w,h);
+    x.strokeStyle='rgba(0,245,212,.08)';for(let i=0;i<=20;i++){x.beginPath();x.moveTo(i*w/20,0);x.lineTo(i*w/20,h);x.moveTo(0,i*h/20);x.lineTo(w,i*h/20);x.stroke()}
+    x.fillStyle='rgba(0,245,212,.5)';x.font='10px Orbitron';x.fillText('19.0°N 72.8°E',8,14);x.fillText('DEMO GRID · NOT REAL DATA',w-170,h-8);
+    const[sx,sy]=pos(k),cx=sx*w,cy=sy*h;
+    [[.28,.25,'255,59,48'],[.5,.16,'245,158,11'],[.85,.24,'124,58,237']].forEach(([px,r,c],i)=>{const q=pos(Math.min(1,k+i*.22));const g=x.createRadialGradient(q[0]*w,q[1]*h,0,q[0]*w,q[1]*h,r*w);g.addColorStop(0,`rgba(${c},.34)`);g.addColorStop(1,`rgba(${c},0)`);x.fillStyle=g;x.fillRect(0,0,w,h)});
+    x.setLineDash([6,6]);x.strokeStyle='rgba(245,158,11,.8)';x.lineWidth=2;x.beginPath();P.forEach((p,i)=>i?x.lineTo(p[0]*w,p[1]*h):x.moveTo(p[0]*w,p[1]*h));x.stroke();x.setLineDash([]);
+    P.forEach((p,i)=>{const on=k*5>=i-.02;x.fillStyle=on?'#00F5D4':'#274';x.shadowColor='#00F5D4';x.shadowBlur=on?14:0;x.beginPath();x.arc(p[0]*w,p[1]*h,6,0,7);x.fill();x.shadowBlur=0;x.fillStyle='#cfe';x.font='10px Orbitron';x.fillText(i?'+'+T[i]+'H':'NOW',p[0]*w-12,p[1]*h-14)});
+    mk.forEach(m=>{x.strokeStyle='#00BFFF';x.beginPath();x.arc(m[1]*w,m[2]*h,5,0,7);x.stroke();x.fillStyle='#8ea3bd';x.font='9px Orbitron';x.fillText(m[0],m[1]*w+9,m[2]*h+3)});
+    const R=Math.min(w,h)*.16;
+    for(let i=0;i<220;i++){const a=i*.17-t*2.2,r=4+i*R/200;x.fillStyle=`rgba(${i<30?'255,59,48':i<90?'245,158,11':'0,191,255'},${.85-i/280})`;x.beginPath();x.arc(cx+Math.cos(a)*r,cy+Math.sin(a)*r*.85,2.2,0,7);x.fill()}
+    x.strokeStyle='rgba(0,245,212,.7)';x.lineWidth=1;for(let i=0;i<16;i++){const a=i/16*6.283+t*.3,r0=R*1.15,r1=R*1.6;x.beginPath();x.moveTo(cx+Math.cos(a)*r0,cy+Math.sin(a)*r0);const ex=cx+Math.cos(a+.5)*r1,ey=cy+Math.sin(a+.5)*r1;x.lineTo(ex,ey);x.stroke();x.beginPath();x.arc(ex,ey,1.8,0,7);x.fillStyle='#00F5D4';x.fill()}
+    x.save();x.translate(cx,cy);x.rotate(t*1.8);const g=x.createLinearGradient(0,0,R*2,0);g.addColorStop(0,'rgba(0,245,212,.35)');g.addColorStop(1,'rgba(0,245,212,0)');x.fillStyle=g;x.beginPath();x.moveTo(0,0);x.arc(0,0,R*2,0,.6);x.fill();x.restore();
+    x.strokeStyle='rgba(0,245,212,.35)';[R,R*1.6,R*2.2].forEach(r=>{x.beginPath();x.arc(cx,cy,r,0,7);x.stroke()});
+    x.strokeStyle='#FF3B30';x.lineWidth=2;x.beginPath();x.arc(cx,cy,10+Math.sin(t*6)*3,0,7);x.stroke()})()})();
+
+/* ===== PIPELINE ===== */
+(function(){const cv=$('#pipecv'),v=vis(cv);let s;const rs=()=>s=fit(cv);addEventListener('resize',rs);rs();
+  const N=['NASA / NOAA','ERA5','IOT','DOPPLER','AI MODEL','STORM PREDICTION','GIS','ALERT'],Lb=['DATA INGESTION','','','','SPATIOTEMPORAL MODEL','PREDICTION ENGINE','','GEO-TARGETED ALERT'];
+  const pos=(i,w,h)=>MOB||w<600?[i%2?w*.72:w*.28,40+i*(h-80)/7]:[w*(.07+.86*(i/7)),h*(i<4?.28+(i%2)*.14:.62-(i%2)*.14)];
+  let t=0,pts=[];
+  (function L(){requestAnimationFrame(L);if(!v())return;t+=.016;const{x,w,h}=s;x.clearRect(0,0,w,h);const act=Math.floor(t*1.1)%8;
+    if(Math.random()<.25&&!RM)pts.push({i:Math.floor(Math.random()*7),u:0});
+    x.lineWidth=1.5;for(let i=0;i<7;i++){const a=pos(i,w,h),b=pos(i+1,w,h);x.strokeStyle='rgba(0,245,212,.3)';x.beginPath();x.moveTo(...a);x.lineTo(...b);x.stroke()}
+    pts=pts.filter(p=>p.u<1);pts.forEach(p=>{p.u+=.014;const a=pos(p.i,w,h),b=pos(p.i+1,w,h);x.fillStyle='#fff';x.shadowColor='#00F5D4';x.shadowBlur=12;x.beginPath();x.arc(a[0]+(b[0]-a[0])*p.u,a[1]+(b[1]-a[1])*p.u,3,0,7);x.fill();x.shadowBlur=0});
+    N.forEach((n,i)=>{const[px,py]=pos(i,w,h),on=i===act,r=(on?30+Math.sin(t*8)*3:24);x.fillStyle='#04182b';x.strokeStyle=on?'#00F5D4':'#00BFFF';x.shadowColor='#00F5D4';x.shadowBlur=on?26:0;x.lineWidth=2;x.beginPath();x.arc(px,py,r,0,7);x.fill();x.stroke();x.shadowBlur=0;
+      x.fillStyle='#e6f1ff';x.font='600 10px Orbitron';x.textAlign='center';x.fillText(n,px,py+r+16);if(Lb[i]){x.fillStyle='#F59E0B';x.font='9px Orbitron';x.fillText(Lb[i],px,py-r-10)}});x.textAlign='left'})()})();
+
+/* ===== DATA CONSTELLATION ===== */
+(function(){const cv=$('#datacv'),v=vis(cv);let s;const rs=()=>s=fit(cv);addEventListener('resize',rs);rs();
+  const S=['NASA','NOAA','ERA5','GROUND IoT','DOPPLER RADAR'],pp=[];let t=0;
+  (function L(){requestAnimationFrame(L);if(!v())return;t+=.01;const{x,w,h}=s;x.clearRect(0,0,w,h);const cx=w/2,cy=h/2,R=Math.min(w,h)*.38;
+    const P=S.map((n,i)=>{const a=i/5*6.283-1.57+Math.sin(t+i)*.06;return[cx+Math.cos(a)*R*1.3*(w>600?1:.8),cy+Math.sin(a)*R+Math.sin(t*2+i)*6]});
+    if(Math.random()<.4&&!RM)pp.push({i:Math.floor(Math.random()*5),u:0});
+    P.forEach(p=>{x.strokeStyle='rgba(0,191,255,.4)';x.beginPath();x.moveTo(p[0],p[1]);x.lineTo(cx,cy);x.stroke()});
+    for(let i=pp.length-1;i>=0;i--){const q=pp[i];q.u+=.014;if(q.u>=1){pp.splice(i,1);continue}const p=P[q.i];x.fillStyle='#00F5D4';x.shadowColor='#00F5D4';x.shadowBlur=10;x.beginPath();x.arc(p[0]+(cx-p[0])*q.u,p[1]+(cy-p[1])*q.u,2.8,0,7);x.fill();x.shadowBlur=0}
+    P.forEach((p,i)=>{x.fillStyle='#062238';x.strokeStyle='#00BFFF';x.beginPath();x.arc(p[0],p[1],22,0,7);x.fill();x.stroke();x.fillStyle='#e6f1ff';x.font='600 10px Orbitron';x.textAlign='center';x.fillText(S[i],p[0],p[1]+40)});
+    const pr=42+Math.sin(t*6)*4;const g=x.createRadialGradient(cx,cy,0,cx,cy,pr*2);g.addColorStop(0,'rgba(0,245,212,.7)');g.addColorStop(1,'rgba(0,245,212,0)');x.fillStyle=g;x.beginPath();x.arc(cx,cy,pr*2,0,7);x.fill();
+    x.fillStyle='#03101c';x.strokeStyle='#00F5D4';x.lineWidth=2;x.beginPath();x.arc(cx,cy,pr,0,7);x.fill();x.stroke();x.fillStyle='#00F5D4';x.font='800 9px Orbitron';x.fillText('STORMSENSE',cx,cy-2);x.fillText('AI ENGINE',cx,cy+11);x.textAlign='left'})()})();
+</script>
+</body>
+</html>
